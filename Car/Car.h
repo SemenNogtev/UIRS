@@ -10,7 +10,11 @@
 class Car
 {
 public:
-    Car() {}
+    Car()
+    {
+        wheelAngleDegreeMax = 10;
+        errorDegree = 0;
+    }
 
     double getWheelAngle() { return stepperMotor.getDegreeDirection(); }
 
@@ -67,7 +71,7 @@ public:
     }
 
 private:
-    double wheelAngleDegreeMax = 10;
+    double wheelAngleDegreeMax;
     double errorDegree;
 
     Rfid rfid;
