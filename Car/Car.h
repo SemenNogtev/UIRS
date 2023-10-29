@@ -27,7 +27,7 @@ public:
 
     double getCourse() { return magnetometer.getDegreeCourse(); }
 
-    void go (double courseDegree, bool airIsOn, double speedPercent) // wheel angle (degree), rele on/off, speedPercent [-100, 100]
+    void go (double courseDegree, bool airIsOn, double speedPercent) // courseDegreeZad, rele on/off, speedPercent [-100, 100]
     {
         controlSystem(courseDegree);
         airSystem(airIsOn);

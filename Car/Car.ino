@@ -8,7 +8,7 @@ double dt = TPeriod*0.001; // шаг расчета, 1 мс
 
 void setup() {
   Serial.begin(9600);
-	car.initCar();
+  car.initCar();
 }
 
 void loop() {
@@ -17,8 +17,8 @@ void loop() {
     t1 += TPeriod;
     
     if (car.unlocked())
-	  {
+    {
       car.go(0, 1, 50);
-	  }
+    }
   }
 }
